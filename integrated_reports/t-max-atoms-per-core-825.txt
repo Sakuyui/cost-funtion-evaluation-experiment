@@ -1,1 +1,0 @@
-per_core_atoms: 825None
