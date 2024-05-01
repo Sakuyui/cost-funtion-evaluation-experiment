@@ -1,0 +1,57 @@
+import random
+import asyncio
+import numpy as np
+def generate_samples(sample_count, neuron_counts_each_application_vertex):
+    import random
+    application_vertex_count = len(neuron_counts_each_application_vertex)
+    total_neuron_count = sum(neuron_counts_each_application_vertex)
+    def generate_samples_max_k_cores(neuron_count, k):
+        if k <= 0 or neuron_count <= 0:
+            return []
+        if k == 1:
+            return [neuron_count]
+        if k >= 2:
+            # dp[n, k] = \sum_m [m] + dp[n - m, k - 1]
+            previous_result_record = [[]] * (neuron_count + 1)  # i-th element represents dp[i, k - 1]
+            # calculate dp[i, k - 1], where i in [0, neuron_count]
+            for i in range(1, neuron_count + 1): # All combinations that i neurons in 1 core.
+                previous_result_record[i] = [i]
+            t = [[]] * (neuron_count + 1)
+            for i in range(2, neuron_count + 1): # All combinations that i neurons in 2 core.
+                temporary_t_i_records = []
+                for m in range(1, neuron_count + 1):
+                    if i - m <= 0 or m <= 0:
+                        continue
+                    temporary_t_i_records.append(previous_result_record[i - m] +  previous_result_record[m])
+                t[i] = temporary_t_i_records
+            
+            for i in range(0, neuron_count + 1):
+                previous_result_record[i] = t[i]
+
+            for k in range(3, neuron_count + 1):
+                print("k = %d" % k)
+                
+                for i in range(k, neuron_count + 1): # All combinations that i neurons in k core.
+                    
+                    temporary_t_i_records = []
+                    for m in range(1, neuron_count + 1):
+                        if i - m <= 0 or m <= 0:
+                            continue
+                        temporary_t_i_records.append([a + b for a,b in zip(previous_result_record[i - m], previous_result_record[m])])
+                    t[i] = temporary_t_i_records
+                for i in range(0, neuron_count + 1):
+                    previous_result_record[i] = t[i]
+                return previous_result_record
+            return previous_result_record
+
+    return generate_samples_max_k_cores(total_neuron_count, total_neuron_count)
+
+def solve_record_i_neuron_in_j_cores(m, i, previous_result_record):
+    if i - m <= 0 or m <= 0:
+        return
+    return (previous_result_record[i - m] +  previous_result_record[m])
+
+samples = generate_samples(500000, [1200, 300])
+samples = np.asarray(samples[-1], dtype=object)
+np.save("samples.npy", samples, allow_pickle=True)
+
