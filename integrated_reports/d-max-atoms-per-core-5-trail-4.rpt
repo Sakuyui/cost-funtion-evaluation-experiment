@@ -1,0 +1,956 @@
+This report is based off energy estimates for individual components of the SpiNNaker machine. It is not meant to be completely accurate. But does use provenance data gathered from the machine to estimate the energy usage and therefore should be in the right ballpark.
+
+
+The energy components we use are as follows:
+
+The energy usage for a chip when all cores are 100% active for a millisecond is 0.0006399999999999999 Joules.
+The energy usage for a chip when all cores are not active for a millisecond is 0.00036 Joules.
+The energy used by the machine for firing a packet is 8e-10 Joules.
+The energy used by each active FPGA per millisecond is 0.000584635 Joules.
+
+
+The packet cost is 0.03978150319999999 Joules
+0 FPGAs on the Spalloc-ed boards are turned on and therefore the energy used by the FPGA during the entire time the machine was booted (which was 168844.484 ms) is 0.0 Joules. The usage during execution was 0.0 Joules.The amount of time used during the loading process is 28085.286999999997 milliseconds.
+Assumed only 2 monitor cores is executing that this point. We also assume that there is a baseline active router/cooling component that is using 4340.865163455298 Joules. Overall the energy usage is 4785.387505539742 Joules.
+The amount of time used during the data extraction process is 6024.156 milliseconds.
+Assumed only 2 monitor cores is executing at this point. We also assume that there is a baseline active router/cooling component that is using 928.7053229070481 Joules. Hence the overall energy usage is 6482.257195723256 Joules.
+
+processor 0:0:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 0:0:1 (running ChipPowerMonitor on 0, 0) used 0.0 Joules by being active during the execution of the simulation
+processor 0:0:2 used 0.0012718222222221987 Joules by being active during the execution of the simulation
+processor 0:0:3 used 0.03555804444444435 Joules by being active during the execution of the simulation
+processor 0:0:4 used 0.007117155555555463 Joules by being active during the execution of the simulation
+processor 0:0:5 used 0.007138488888888815 Joules by being active during the execution of the simulation
+processor 0:0:6 used 0.007151288888888817 Joules by being active during the execution of the simulation
+processor 0:0:7 used 0.007174399999999922 Joules by being active during the execution of the simulation
+processor 0:0:8 used 0.007064533333333245 Joules by being active during the execution of the simulation
+processor 0:0:9 used 0.007163733333333263 Joules by being active during the execution of the simulation
+processor 0:0:10 used 0.00712675555555546 Joules by being active during the execution of the simulation
+processor 0:0:11 used 0.007164444444444354 Joules by being active during the execution of the simulation
+processor 0:0:12 used 0.007060266666666584 Joules by being active during the execution of the simulation
+processor 0:0:13 used 0.007097244444444366 Joules by being active during the execution of the simulation
+processor 0:0:14 used 0.007114666666666585 Joules by being active during the execution of the simulation
+processor 0:0:15 used 0.007141688888888812 Joules by being active during the execution of the simulation
+processor 0:0:16 used 0.007163377777777702 Joules by being active during the execution of the simulation
+processor 0:0:17 used 0.0071000888888888055 Joules by being active during the execution of the simulation
+The chip at 0,0 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 0:1:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 0:1:1 (running ChipPowerMonitor on 0, 1) used 0.0 Joules by being active during the execution of the simulation
+processor 0:1:2 used 0.007102577777777714 Joules by being active during the execution of the simulation
+processor 0:1:3 used 0.0071836444444443705 Joules by being active during the execution of the simulation
+processor 0:1:4 used 0.007144888888888824 Joules by being active during the execution of the simulation
+processor 0:1:5 used 0.0071100444444443635 Joules by being active during the execution of the simulation
+processor 0:1:6 used 0.007086933333333256 Joules by being active during the execution of the simulation
+processor 0:1:7 used 0.0070460444444443715 Joules by being active during the execution of the simulation
+processor 0:1:8 used 0.007101866666666598 Joules by being active during the execution of the simulation
+processor 0:1:9 used 0.0071025777777777 Joules by being active during the execution of the simulation
+processor 0:1:10 used 0.0012735999999999787 Joules by being active during the execution of the simulation
+processor 0:1:11 used 0.007001599999999927 Joules by being active during the execution of the simulation
+processor 0:1:12 used 0.007057066666666597 Joules by being active during the execution of the simulation
+processor 0:1:13 used 0.007061688888888825 Joules by being active during the execution of the simulation
+processor 0:1:14 used 0.007119644444444367 Joules by being active during the execution of the simulation
+processor 0:1:15 used 0.007085155555555473 Joules by being active during the execution of the simulation
+processor 0:1:16 used 0.007112888888888819 Joules by being active during the execution of the simulation
+processor 0:1:17 used 0.00700693333333327 Joules by being active during the execution of the simulation
+The chip at 0,1 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 0:2:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 0:2:1 (running ChipPowerMonitor on 0, 2) used 0.0 Joules by being active during the execution of the simulation
+processor 0:2:2 used 0.007080177777777698 Joules by being active during the execution of the simulation
+processor 0:2:3 used 0.0070396444444443766 Joules by being active during the execution of the simulation
+processor 0:2:4 used 0.007043911111111042 Joules by being active during the execution of the simulation
+processor 0:2:5 used 0.00711217777777771 Joules by being active during the execution of the simulation
+processor 0:2:6 used 0.0071057777777777074 Joules by being active during the execution of the simulation
+processor 0:2:7 used 0.007111111111111046 Joules by being active during the execution of the simulation
+processor 0:2:8 used 0.007080533333333268 Joules by being active during the execution of the simulation
+processor 0:2:9 used 0.007017244444444368 Joules by being active during the execution of the simulation
+processor 0:2:10 used 0.001284266666666647 Joules by being active during the execution of the simulation
+processor 0:2:11 used 0.007012977777777701 Joules by being active during the execution of the simulation
+processor 0:2:12 used 0.007163733333333268 Joules by being active during the execution of the simulation
+processor 0:2:13 used 0.00700302222222214 Joules by being active during the execution of the simulation
+processor 0:2:14 used 0.007121777777777713 Joules by being active during the execution of the simulation
+processor 0:2:15 used 0.007052799999999923 Joules by being active during the execution of the simulation
+processor 0:2:16 used 0.007055644444444374 Joules by being active during the execution of the simulation
+processor 0:2:17 used 0.007133866666666595 Joules by being active during the execution of the simulation
+The chip at 0,2 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 0:3:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 0:3:1 (running ChipPowerMonitor on 0, 3) used 0.03555164444444436 Joules by being active during the execution of the simulation
+processor 0:3:2 used 0.007137422222222151 Joules by being active during the execution of the simulation
+processor 0:3:3 used 0.007136355555555488 Joules by being active during the execution of the simulation
+processor 0:3:4 used 0.007165866666666583 Joules by being active during the execution of the simulation
+processor 0:3:5 used 0.007255466666666597 Joules by being active during the execution of the simulation
+processor 0:3:6 used 0.007153777777777721 Joules by being active during the execution of the simulation
+processor 0:3:7 used 0.00712959999999992 Joules by being active during the execution of the simulation
+processor 0:3:8 used 0.0071893333333332594 Joules by being active during the execution of the simulation
+processor 0:3:9 used 0.007172622222222132 Joules by being active during the execution of the simulation
+processor 0:3:10 used 0.0012654222222221983 Joules by being active during the execution of the simulation
+processor 0:3:11 used 0.007163733333333273 Joules by being active during the execution of the simulation
+processor 0:3:12 used 0.0071199999999999155 Joules by being active during the execution of the simulation
+processor 0:3:13 used 0.007211733333333264 Joules by being active during the execution of the simulation
+processor 0:3:14 used 0.007132444444444353 Joules by being active during the execution of the simulation
+processor 0:3:15 used 0.007109688888888813 Joules by being active during the execution of the simulation
+processor 0:3:16 used 0.007053155555555485 Joules by being active during the execution of the simulation
+processor 0:3:17 used 0.00710151111111103 Joules by being active during the execution of the simulation
+The chip at 0,3 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 1:0:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 1:0:1 (running ChipPowerMonitor on 1, 0) used 0.07111111111110803 Joules by being active during the execution of the simulation
+processor 1:0:2 used 0.007071288888888813 Joules by being active during the execution of the simulation
+processor 1:0:3 used 0.00704319999999992 Joules by being active during the execution of the simulation
+processor 1:0:4 used 0.007046755555555468 Joules by being active during the execution of the simulation
+processor 1:0:5 used 0.0070435555555554774 Joules by being active during the execution of the simulation
+processor 1:0:6 used 0.007073066666666607 Joules by being active during the execution of the simulation
+processor 1:0:7 used 0.0070826666666665835 Joules by being active during the execution of the simulation
+processor 1:0:8 used 0.007017244444444368 Joules by being active during the execution of the simulation
+processor 1:0:9 used 0.007039288888888815 Joules by being active during the execution of the simulation
+processor 1:0:10 used 0.0012757333333333128 Joules by being active during the execution of the simulation
+processor 1:0:11 used 0.007067733333333257 Joules by being active during the execution of the simulation
+processor 1:0:12 used 0.0070819555555554775 Joules by being active during the execution of the simulation
+processor 1:0:13 used 0.00704924444444437 Joules by being active during the execution of the simulation
+processor 1:0:14 used 0.007017599999999934 Joules by being active during the execution of the simulation
+processor 1:0:15 used 0.007051377777777695 Joules by being active during the execution of the simulation
+processor 1:0:16 used 0.007048177777777707 Joules by being active during the execution of the simulation
+processor 1:0:17 used 0.007095466666666591 Joules by being active during the execution of the simulation
+The chip at 1,0 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 1:1:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 1:1:1 (running ChipPowerMonitor on 1, 1) used 0.0 Joules by being active during the execution of the simulation
+processor 1:1:2 used 0.007087288888888824 Joules by being active during the execution of the simulation
+processor 1:1:3 used 0.0 Joules by being active during the execution of the simulation
+processor 1:1:4 used 0.007053866666666593 Joules by being active during the execution of the simulation
+processor 1:1:5 used 0.007181155555555493 Joules by being active during the execution of the simulation
+processor 1:1:6 used 0.007073066666666601 Joules by being active during the execution of the simulation
+processor 1:1:7 used 0.007090488888888824 Joules by being active during the execution of the simulation
+processor 1:1:8 used 0.007116444444444358 Joules by being active during the execution of the simulation
+processor 1:1:9 used 0.007065599999999909 Joules by being active during the execution of the simulation
+processor 1:1:10 used 0.0070751999999999204 Joules by being active during the execution of the simulation
+processor 1:1:11 used 0.001259022222222197 Joules by being active during the execution of the simulation
+processor 1:1:12 used 0.007085155555555486 Joules by being active during the execution of the simulation
+processor 1:1:13 used 0.007090844444444378 Joules by being active during the execution of the simulation
+processor 1:1:14 used 0.007081599999999921 Joules by being active during the execution of the simulation
+processor 1:1:15 used 0.007065244444444363 Joules by being active during the execution of the simulation
+processor 1:1:16 used 0.007104711111111045 Joules by being active during the execution of the simulation
+processor 1:1:17 used 0.00704213333333326 Joules by being active during the execution of the simulation
+The chip at 1,1 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 1:2:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 1:2:1 (running ChipPowerMonitor on 1, 2) used 0.0 Joules by being active during the execution of the simulation
+processor 1:2:2 used 0.007014044444444381 Joules by being active during the execution of the simulation
+processor 1:2:3 used 0.007074844444444371 Joules by being active during the execution of the simulation
+processor 1:2:4 used 0.007089422222222152 Joules by being active during the execution of the simulation
+processor 1:2:5 used 0.0070360888888888196 Joules by being active during the execution of the simulation
+processor 1:2:6 used 0.0070780444444443775 Joules by being active during the execution of the simulation
+processor 1:2:7 used 0.007065599999999929 Joules by being active during the execution of the simulation
+processor 1:2:8 used 0.007048177777777707 Joules by being active during the execution of the simulation
+processor 1:2:9 used 0.007133155555555493 Joules by being active during the execution of the simulation
+processor 1:2:10 used 0.0012760888888888673 Joules by being active during the execution of the simulation
+processor 1:2:11 used 0.007054577777777712 Joules by being active during the execution of the simulation
+processor 1:2:12 used 0.00704533333333327 Joules by being active during the execution of the simulation
+processor 1:2:13 used 0.007095822222222149 Joules by being active during the execution of the simulation
+processor 1:2:14 used 0.007082311111111033 Joules by being active during the execution of the simulation
+processor 1:2:15 used 0.007038933333333258 Joules by being active during the execution of the simulation
+processor 1:2:16 used 0.007084088888888828 Joules by being active during the execution of the simulation
+processor 1:2:17 used 0.007042488888888809 Joules by being active during the execution of the simulation
+The chip at 1,2 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 1:3:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 1:3:1 (running ChipPowerMonitor on 1, 3) used 0.03555484444444436 Joules by being active during the execution of the simulation
+processor 1:3:2 used 0.007183644444444377 Joules by being active during the execution of the simulation
+processor 1:3:3 used 0.007080888888888805 Joules by being active during the execution of the simulation
+processor 1:3:4 used 0.007083733333333235 Joules by being active during the execution of the simulation
+processor 1:3:5 used 0.007169066666666602 Joules by being active during the execution of the simulation
+processor 1:3:6 used 0.007135644444444365 Joules by being active during the execution of the simulation
+processor 1:3:7 used 0.007104355555555478 Joules by being active during the execution of the simulation
+processor 1:3:8 used 0.007126044444444373 Joules by being active during the execution of the simulation
+processor 1:3:9 used 0.007101866666666593 Joules by being active during the execution of the simulation
+processor 1:3:10 used 0.0012590222222221975 Joules by being active during the execution of the simulation
+processor 1:3:11 used 0.007104711111111026 Joules by being active during the execution of the simulation
+processor 1:3:12 used 0.007177955555555477 Joules by being active during the execution of the simulation
+processor 1:3:13 used 0.00716302222222215 Joules by being active during the execution of the simulation
+processor 1:3:14 used 0.0070396444444443575 Joules by being active during the execution of the simulation
+processor 1:3:15 used 0.007243022222222162 Joules by being active during the execution of the simulation
+processor 1:3:16 used 0.0 Joules by being active during the execution of the simulation
+processor 1:3:17 used 0.0071768888888888134 Joules by being active during the execution of the simulation
+The chip at 1,3 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 1:4:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 1:4:1 (running ChipPowerMonitor on 1, 4) used 0.0 Joules by being active during the execution of the simulation
+processor 1:4:2 used 0.0 Joules by being active during the execution of the simulation
+processor 1:4:3 used 0.0 Joules by being active during the execution of the simulation
+processor 1:4:4 used 0.0 Joules by being active during the execution of the simulation
+processor 1:4:5 used 0.0 Joules by being active during the execution of the simulation
+processor 1:4:6 used 0.0 Joules by being active during the execution of the simulation
+processor 1:4:7 used 0.0 Joules by being active during the execution of the simulation
+processor 1:4:8 used 0.0 Joules by being active during the execution of the simulation
+processor 1:4:9 used 0.0 Joules by being active during the execution of the simulation
+processor 1:4:10 used 0.0012287999999999724 Joules by being active during the execution of the simulation
+processor 1:4:11 used 0.0 Joules by being active during the execution of the simulation
+processor 1:4:12 used 0.0 Joules by being active during the execution of the simulation
+processor 1:4:13 used 0.0 Joules by being active during the execution of the simulation
+processor 1:4:14 used 0.0 Joules by being active during the execution of the simulation
+processor 1:4:15 used 0.0 Joules by being active during the execution of the simulation
+processor 1:4:16 used 0.0 Joules by being active during the execution of the simulation
+processor 1:4:17 used 0.0 Joules by being active during the execution of the simulation
+The chip at 1,4 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 2:0:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 2:0:1 (running ChipPowerMonitor on 2, 0) used 0.035555911111111026 Joules by being active during the execution of the simulation
+processor 2:0:2 used 0.007031822222222153 Joules by being active during the execution of the simulation
+processor 2:0:3 used 0.00706204444444439 Joules by being active during the execution of the simulation
+processor 2:0:4 used 0.007085155555555472 Joules by being active during the execution of the simulation
+processor 2:0:5 used 0.007015822222222143 Joules by being active during the execution of the simulation
+processor 2:0:6 used 0.007041066666666591 Joules by being active during the execution of the simulation
+processor 2:0:7 used 0.007047111111111032 Joules by being active during the execution of the simulation
+processor 2:0:8 used 0.00703039999999993 Joules by being active during the execution of the simulation
+processor 2:0:9 used 0.00704284444444438 Joules by being active during the execution of the simulation
+processor 2:0:10 used 0.0012693333333333092 Joules by being active during the execution of the simulation
+processor 2:0:11 used 0.0070225777777776915 Joules by being active during the execution of the simulation
+processor 2:0:12 used 0.007030399999999921 Joules by being active during the execution of the simulation
+processor 2:0:13 used 0.006999822222222148 Joules by being active during the execution of the simulation
+processor 2:0:14 used 0.006968888888888816 Joules by being active during the execution of the simulation
+processor 2:0:15 used 0.007083022222222156 Joules by being active during the execution of the simulation
+processor 2:0:16 used 0.006980977777777698 Joules by being active during the execution of the simulation
+processor 2:0:17 used 0.00704319999999992 Joules by being active during the execution of the simulation
+The chip at 2,0 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 2:1:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 2:1:1 (running ChipPowerMonitor on 2, 1) used 1.0666666666666665e-06 Joules by being active during the execution of the simulation
+processor 2:1:2 used 0.007017244444444361 Joules by being active during the execution of the simulation
+processor 2:1:3 used 0.007105777777777709 Joules by being active during the execution of the simulation
+processor 2:1:4 used 0.007012266666666594 Joules by being active during the execution of the simulation
+processor 2:1:5 used 0.007022222222222146 Joules by being active during the execution of the simulation
+processor 2:1:6 used 0.006983822222222148 Joules by being active during the execution of the simulation
+processor 2:1:7 used 0.0069578666666665874 Joules by being active during the execution of the simulation
+processor 2:1:8 used 0.006977422222222141 Joules by being active during the execution of the simulation
+processor 2:1:9 used 0.007117866666666594 Joules by being active during the execution of the simulation
+processor 2:1:10 used 0.001265066666666642 Joules by being active during the execution of the simulation
+processor 2:1:11 used 0.007128177777777696 Joules by being active during the execution of the simulation
+processor 2:1:12 used 0.007024711111111032 Joules by being active during the execution of the simulation
+processor 2:1:13 used 0.007019022222222155 Joules by being active during the execution of the simulation
+processor 2:1:14 used 0.00701155555555548 Joules by being active during the execution of the simulation
+processor 2:1:15 used 0.0069905777777776994 Joules by being active during the execution of the simulation
+processor 2:1:16 used 0.006962844444444369 Joules by being active during the execution of the simulation
+processor 2:1:17 used 0.007043555555555484 Joules by being active during the execution of the simulation
+The chip at 2,1 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 2:2:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 2:2:1 (running ChipPowerMonitor on 2, 2) used 0.0 Joules by being active during the execution of the simulation
+processor 2:2:2 used 0.00705671111111104 Joules by being active during the execution of the simulation
+processor 2:2:3 used 0.007032888888888818 Joules by being active during the execution of the simulation
+processor 2:2:4 used 0.0070111999999999276 Joules by being active during the execution of the simulation
+processor 2:2:5 used 0.007025066666666592 Joules by being active during the execution of the simulation
+processor 2:2:6 used 0.007056355555555493 Joules by being active during the execution of the simulation
+processor 2:2:7 used 0.007007644444444378 Joules by being active during the execution of the simulation
+processor 2:2:8 used 0.007034311111111045 Joules by being active during the execution of the simulation
+processor 2:2:9 used 0.007038933333333267 Joules by being active during the execution of the simulation
+processor 2:2:10 used 0.0012778666666666426 Joules by being active during the execution of the simulation
+processor 2:2:11 used 0.007069866666666591 Joules by being active during the execution of the simulation
+processor 2:2:12 used 0.0070001777777777075 Joules by being active during the execution of the simulation
+processor 2:2:13 used 0.007031111111111029 Joules by being active during the execution of the simulation
+processor 2:2:14 used 0.007027555555555486 Joules by being active during the execution of the simulation
+processor 2:2:15 used 0.007027199999999919 Joules by being active during the execution of the simulation
+processor 2:2:16 used 0.007065599999999918 Joules by being active during the execution of the simulation
+processor 2:2:17 used 0.007071288888888817 Joules by being active during the execution of the simulation
+The chip at 2,2 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 2:3:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 2:3:1 (running ChipPowerMonitor on 2, 3) used 0.0 Joules by being active during the execution of the simulation
+processor 2:3:2 used 0.007103288888888809 Joules by being active during the execution of the simulation
+processor 2:3:3 used 0.00707271111111104 Joules by being active during the execution of the simulation
+processor 2:3:4 used 0.007166933333333272 Joules by being active during the execution of the simulation
+processor 2:3:5 used 0.007044622222222143 Joules by being active during the execution of the simulation
+processor 2:3:6 used 0.007103999999999929 Joules by being active during the execution of the simulation
+processor 2:3:7 used 0.007046044444444385 Joules by being active during the execution of the simulation
+processor 2:3:8 used 0.007127822222222157 Joules by being active during the execution of the simulation
+processor 2:3:9 used 0.0070951111111110425 Joules by being active during the execution of the simulation
+processor 2:3:10 used 0.0012714666666666444 Joules by being active during the execution of the simulation
+processor 2:3:11 used 0.007133511111111039 Joules by being active during the execution of the simulation
+processor 2:3:12 used 0.007103999999999918 Joules by being active during the execution of the simulation
+processor 2:3:13 used 0.007070577777777701 Joules by being active during the execution of the simulation
+processor 2:3:14 used 0.007106488888888816 Joules by being active during the execution of the simulation
+processor 2:3:15 used 0.007141688888888813 Joules by being active during the execution of the simulation
+processor 2:3:16 used 0.007101866666666589 Joules by being active during the execution of the simulation
+processor 2:3:17 used 0.0070318222222221505 Joules by being active during the execution of the simulation
+The chip at 2,3 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 2:4:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 2:4:1 (running ChipPowerMonitor on 2, 4) used 0.0 Joules by being active during the execution of the simulation
+processor 2:4:2 used 0.0 Joules by being active during the execution of the simulation
+processor 2:4:3 used 0.0 Joules by being active during the execution of the simulation
+processor 2:4:4 used 0.0 Joules by being active during the execution of the simulation
+processor 2:4:5 used 0.0 Joules by being active during the execution of the simulation
+processor 2:4:6 used 0.0 Joules by being active during the execution of the simulation
+processor 2:4:7 used 0.0 Joules by being active during the execution of the simulation
+processor 2:4:8 used 0.0 Joules by being active during the execution of the simulation
+processor 2:4:9 used 0.0 Joules by being active during the execution of the simulation
+processor 2:4:10 used 0.0012398222222221964 Joules by being active during the execution of the simulation
+processor 2:4:11 used 0.0 Joules by being active during the execution of the simulation
+processor 2:4:12 used 0.0 Joules by being active during the execution of the simulation
+processor 2:4:13 used 0.0 Joules by being active during the execution of the simulation
+processor 2:4:14 used 0.0 Joules by being active during the execution of the simulation
+processor 2:4:15 used 0.0 Joules by being active during the execution of the simulation
+processor 2:4:16 used 0.0 Joules by being active during the execution of the simulation
+processor 2:4:17 used 0.0 Joules by being active during the execution of the simulation
+The chip at 2,4 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 2:5:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 2:5:1 (running ChipPowerMonitor on 2, 5) used 0.0 Joules by being active during the execution of the simulation
+processor 2:5:2 used 0.0 Joules by being active during the execution of the simulation
+processor 2:5:3 used 0.0 Joules by being active during the execution of the simulation
+processor 2:5:4 used 0.0 Joules by being active during the execution of the simulation
+processor 2:5:5 used 0.0 Joules by being active during the execution of the simulation
+processor 2:5:6 used 0.0 Joules by being active during the execution of the simulation
+processor 2:5:7 used 0.0 Joules by being active during the execution of the simulation
+processor 2:5:8 used 0.0 Joules by being active during the execution of the simulation
+processor 2:5:9 used 0.0 Joules by being active during the execution of the simulation
+processor 2:5:10 used 0.0012270222222221952 Joules by being active during the execution of the simulation
+processor 2:5:11 used 0.0 Joules by being active during the execution of the simulation
+processor 2:5:12 used 0.0 Joules by being active during the execution of the simulation
+processor 2:5:13 used 0.0 Joules by being active during the execution of the simulation
+processor 2:5:14 used 0.0 Joules by being active during the execution of the simulation
+processor 2:5:15 used 0.0 Joules by being active during the execution of the simulation
+processor 2:5:16 used 0.0 Joules by being active during the execution of the simulation
+processor 2:5:17 used 0.0 Joules by being active during the execution of the simulation
+The chip at 2,5 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 3:0:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 3:0:1 (running ChipPowerMonitor on 3, 0) used 0.03555377777777769 Joules by being active during the execution of the simulation
+processor 3:0:2 used 0.007097244444444375 Joules by being active during the execution of the simulation
+processor 3:0:3 used 0.007135644444444371 Joules by being active during the execution of the simulation
+processor 3:0:4 used 0.0071125333333332446 Joules by being active during the execution of the simulation
+processor 3:0:5 used 0.007121066666666596 Joules by being active during the execution of the simulation
+processor 3:0:6 used 0.007069155555555475 Joules by being active during the execution of the simulation
+processor 3:0:7 used 0.007079111111111042 Joules by being active during the execution of the simulation
+processor 3:0:8 used 0.007033955555555474 Joules by being active during the execution of the simulation
+processor 3:0:9 used 0.007128533333333264 Joules by being active during the execution of the simulation
+processor 3:0:10 used 0.0012636444444444242 Joules by being active during the execution of the simulation
+processor 3:0:11 used 0.007070933333333259 Joules by being active during the execution of the simulation
+processor 3:0:12 used 0.007007644444444365 Joules by being active during the execution of the simulation
+processor 3:0:13 used 0.0071160888888888146 Joules by being active during the execution of the simulation
+processor 3:0:14 used 0.00704426666666659 Joules by being active during the execution of the simulation
+processor 3:0:15 used 0.007077688888888834 Joules by being active during the execution of the simulation
+processor 3:0:16 used 0.0 Joules by being active during the execution of the simulation
+processor 3:0:17 used 0.007086577777777707 Joules by being active during the execution of the simulation
+The chip at 3,0 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 3:1:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 3:1:1 (running ChipPowerMonitor on 3, 1) used 0.0 Joules by being active during the execution of the simulation
+processor 3:1:2 used 0.007028977777777699 Joules by being active during the execution of the simulation
+processor 3:1:3 used 0.0 Joules by being active during the execution of the simulation
+processor 3:1:4 used 0.0070449777777776956 Joules by being active during the execution of the simulation
+processor 3:1:5 used 0.007130311111111041 Joules by being active during the execution of the simulation
+processor 3:1:6 used 0.00705635555555547 Joules by being active during the execution of the simulation
+processor 3:1:7 used 0.007030044444444373 Joules by being active during the execution of the simulation
+processor 3:1:8 used 0.007089066666666585 Joules by being active during the execution of the simulation
+processor 3:1:9 used 0.007099733333333255 Joules by being active during the execution of the simulation
+processor 3:1:10 used 0.007123199999999921 Joules by being active during the execution of the simulation
+processor 3:1:11 used 0.007159822222222155 Joules by being active during the execution of the simulation
+processor 3:1:12 used 0.007062044444444364 Joules by being active during the execution of the simulation
+processor 3:1:13 used 0.0071505777777777025 Joules by being active during the execution of the simulation
+processor 3:1:14 used 0.007078044444444374 Joules by being active during the execution of the simulation
+processor 3:1:15 used 0.001246577777777751 Joules by being active during the execution of the simulation
+processor 3:1:16 used 0.007027555555555473 Joules by being active during the execution of the simulation
+processor 3:1:17 used 0.007012266666666586 Joules by being active during the execution of the simulation
+The chip at 3,1 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 3:2:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 3:2:1 (running ChipPowerMonitor on 3, 2) used 3.5555555555555553e-07 Joules by being active during the execution of the simulation
+processor 3:2:2 used 0.007078755555555497 Joules by being active during the execution of the simulation
+processor 3:2:3 used 0.00707839999999991 Joules by being active during the execution of the simulation
+processor 3:2:4 used 0.007117155555555467 Joules by being active during the execution of the simulation
+processor 3:2:5 used 0.007092977777777708 Joules by being active during the execution of the simulation
+processor 3:2:6 used 0.007098311111111017 Joules by being active during the execution of the simulation
+processor 3:2:7 used 0.007144888888888815 Joules by being active during the execution of the simulation
+processor 3:2:8 used 0.0071189333333332725 Joules by being active during the execution of the simulation
+processor 3:2:9 used 0.007048533333333272 Joules by being active during the execution of the simulation
+processor 3:2:10 used 0.0012696888888888657 Joules by being active during the execution of the simulation
+processor 3:2:11 used 0.007054577777777711 Joules by being active during the execution of the simulation
+processor 3:2:12 used 0.007059555555555487 Joules by being active during the execution of the simulation
+processor 3:2:13 used 0.007091911111111025 Joules by being active during the execution of the simulation
+processor 3:2:14 used 0.007115377777777687 Joules by being active during the execution of the simulation
+processor 3:2:15 used 0.007088711111111044 Joules by being active during the execution of the simulation
+processor 3:2:16 used 0.007093688888888812 Joules by being active during the execution of the simulation
+processor 3:2:17 used 0.007002311111111032 Joules by being active during the execution of the simulation
+The chip at 3,2 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 3:3:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 3:3:1 (running ChipPowerMonitor on 3, 3) used 0.03555199999999991 Joules by being active during the execution of the simulation
+processor 3:3:2 used 0.007131377777777702 Joules by being active during the execution of the simulation
+processor 3:3:3 used 0.007065599999999915 Joules by being active during the execution of the simulation
+processor 3:3:4 used 0.007090133333333257 Joules by being active during the execution of the simulation
+processor 3:3:5 used 0.007105777777777695 Joules by being active during the execution of the simulation
+processor 3:3:6 used 0.0071335111111110435 Joules by being active during the execution of the simulation
+processor 3:3:7 used 0.007123199999999927 Joules by being active during the execution of the simulation
+processor 3:3:8 used 0.007114666666666591 Joules by being active during the execution of the simulation
+processor 3:3:9 used 0.007094044444444369 Joules by being active during the execution of the simulation
+processor 3:3:10 used 0.001260088888888865 Joules by being active during the execution of the simulation
+processor 3:3:11 used 0.007139199999999926 Joules by being active during the execution of the simulation
+processor 3:3:12 used 0.0071445333333332575 Joules by being active during the execution of the simulation
+processor 3:3:13 used 0.007144533333333275 Joules by being active during the execution of the simulation
+processor 3:3:14 used 0.0071310222222221555 Joules by being active during the execution of the simulation
+processor 3:3:15 used 0.007021155555555493 Joules by being active during the execution of the simulation
+processor 3:3:16 used 0.0 Joules by being active during the execution of the simulation
+processor 3:3:17 used 0.007097599999999926 Joules by being active during the execution of the simulation
+The chip at 3,3 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 3:4:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 3:4:1 (running ChipPowerMonitor on 3, 4) used 0.0 Joules by being active during the execution of the simulation
+processor 3:4:2 used 0.0 Joules by being active during the execution of the simulation
+processor 3:4:3 used 0.0 Joules by being active during the execution of the simulation
+processor 3:4:4 used 0.0 Joules by being active during the execution of the simulation
+processor 3:4:5 used 0.0 Joules by being active during the execution of the simulation
+processor 3:4:6 used 0.0 Joules by being active during the execution of the simulation
+processor 3:4:7 used 0.0 Joules by being active during the execution of the simulation
+processor 3:4:8 used 0.0 Joules by being active during the execution of the simulation
+processor 3:4:9 used 0.0 Joules by being active during the execution of the simulation
+processor 3:4:10 used 0.0012355555555555269 Joules by being active during the execution of the simulation
+processor 3:4:11 used 0.0 Joules by being active during the execution of the simulation
+processor 3:4:12 used 0.0 Joules by being active during the execution of the simulation
+processor 3:4:13 used 0.0 Joules by being active during the execution of the simulation
+processor 3:4:14 used 0.0 Joules by being active during the execution of the simulation
+processor 3:4:15 used 0.0 Joules by being active during the execution of the simulation
+processor 3:4:16 used 0.0 Joules by being active during the execution of the simulation
+processor 3:4:17 used 0.0 Joules by being active during the execution of the simulation
+The chip at 3,4 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 3:5:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 3:5:1 (running ChipPowerMonitor on 3, 5) used 0.0 Joules by being active during the execution of the simulation
+processor 3:5:2 used 0.0 Joules by being active during the execution of the simulation
+processor 3:5:3 used 0.0012302222222221938 Joules by being active during the execution of the simulation
+processor 3:5:4 used 0.0 Joules by being active during the execution of the simulation
+processor 3:5:5 used 0.0 Joules by being active during the execution of the simulation
+processor 3:5:6 used 0.0 Joules by being active during the execution of the simulation
+processor 3:5:7 used 0.0 Joules by being active during the execution of the simulation
+processor 3:5:8 used 0.0 Joules by being active during the execution of the simulation
+processor 3:5:9 used 0.0 Joules by being active during the execution of the simulation
+processor 3:5:10 used 0.0 Joules by being active during the execution of the simulation
+processor 3:5:11 used 0.0 Joules by being active during the execution of the simulation
+processor 3:5:12 used 0.0 Joules by being active during the execution of the simulation
+processor 3:5:13 used 0.0 Joules by being active during the execution of the simulation
+processor 3:5:14 used 0.0 Joules by being active during the execution of the simulation
+processor 3:5:15 used 0.0 Joules by being active during the execution of the simulation
+processor 3:5:16 used 0.0 Joules by being active during the execution of the simulation
+processor 3:5:17 used 0.0 Joules by being active during the execution of the simulation
+The chip at 3,5 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 4:0:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 4:0:1 (running ChipPowerMonitor on 4, 0) used 0.0 Joules by being active during the execution of the simulation
+processor 4:0:2 used 0.0070414222222221455 Joules by being active during the execution of the simulation
+processor 4:0:3 used 0.007034666666666599 Joules by being active during the execution of the simulation
+processor 4:0:4 used 0.007062044444444363 Joules by being active during the execution of the simulation
+processor 4:0:5 used 0.007097599999999924 Joules by being active during the execution of the simulation
+processor 4:0:6 used 0.007054577777777701 Joules by being active during the execution of the simulation
+processor 4:0:7 used 0.007089422222222155 Joules by being active during the execution of the simulation
+processor 4:0:8 used 0.007116444444444374 Joules by being active during the execution of the simulation
+processor 4:0:9 used 0.007111822222222149 Joules by being active during the execution of the simulation
+processor 4:0:10 used 0.0012682666666666439 Joules by being active during the execution of the simulation
+processor 4:0:11 used 0.007042844444444369 Joules by being active during the execution of the simulation
+processor 4:0:12 used 0.007088711111111059 Joules by being active during the execution of the simulation
+processor 4:0:13 used 0.00714773333333327 Joules by being active during the execution of the simulation
+processor 4:0:14 used 0.0070261333333332555 Joules by being active during the execution of the simulation
+processor 4:0:15 used 0.0070524444444443795 Joules by being active during the execution of the simulation
+processor 4:0:16 used 0.007027555555555481 Joules by being active during the execution of the simulation
+processor 4:0:17 used 0.00707839999999992 Joules by being active during the execution of the simulation
+The chip at 4,0 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 4:1:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 4:1:1 (running ChipPowerMonitor on 4, 1) used 0.0 Joules by being active during the execution of the simulation
+processor 4:1:2 used 0.007060622222222155 Joules by being active during the execution of the simulation
+processor 4:1:3 used 0.00705457777777771 Joules by being active during the execution of the simulation
+processor 4:1:4 used 0.007094755555555497 Joules by being active during the execution of the simulation
+processor 4:1:5 used 0.007121777777777695 Joules by being active during the execution of the simulation
+processor 4:1:6 used 0.007102222222222147 Joules by being active during the execution of the simulation
+processor 4:1:7 used 0.007065599999999922 Joules by being active during the execution of the simulation
+processor 4:1:8 used 0.007121066666666576 Joules by being active during the execution of the simulation
+processor 4:1:9 used 0.007156622222222145 Joules by being active during the execution of the simulation
+processor 4:1:10 used 0.0012689777777777542 Joules by being active during the execution of the simulation
+processor 4:1:11 used 0.007047466666666591 Joules by being active during the execution of the simulation
+processor 4:1:12 used 0.0071271111111110355 Joules by being active during the execution of the simulation
+processor 4:1:13 used 0.007069511111111049 Joules by being active during the execution of the simulation
+processor 4:1:14 used 0.007126044444444372 Joules by being active during the execution of the simulation
+processor 4:1:15 used 0.007015822222222136 Joules by being active during the execution of the simulation
+processor 4:1:16 used 0.007182577777777697 Joules by being active during the execution of the simulation
+processor 4:1:17 used 0.007023999999999923 Joules by being active during the execution of the simulation
+The chip at 4,1 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 4:2:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 4:2:1 (running ChipPowerMonitor on 4, 2) used 0.0 Joules by being active during the execution of the simulation
+processor 4:2:2 used 0.0 Joules by being active during the execution of the simulation
+processor 4:2:3 used 0.0 Joules by being active during the execution of the simulation
+processor 4:2:4 used 0.0 Joules by being active during the execution of the simulation
+processor 4:2:5 used 0.0 Joules by being active during the execution of the simulation
+processor 4:2:6 used 0.0012099555555555236 Joules by being active during the execution of the simulation
+processor 4:2:7 used 0.0 Joules by being active during the execution of the simulation
+processor 4:2:8 used 0.0 Joules by being active during the execution of the simulation
+processor 4:2:9 used 0.0 Joules by being active during the execution of the simulation
+processor 4:2:10 used 0.0 Joules by being active during the execution of the simulation
+processor 4:2:11 used 0.0 Joules by being active during the execution of the simulation
+processor 4:2:12 used 0.0 Joules by being active during the execution of the simulation
+processor 4:2:13 used 0.0 Joules by being active during the execution of the simulation
+processor 4:2:14 used 0.0 Joules by being active during the execution of the simulation
+processor 4:2:15 used 0.0 Joules by being active during the execution of the simulation
+processor 4:2:16 used 0.0 Joules by being active during the execution of the simulation
+processor 4:2:17 used 0.0 Joules by being active during the execution of the simulation
+The chip at 4,2 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 4:3:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 4:3:1 (running ChipPowerMonitor on 4, 3) used 0.0 Joules by being active during the execution of the simulation
+processor 4:3:2 used 0.0 Joules by being active during the execution of the simulation
+processor 4:3:3 used 0.0 Joules by being active during the execution of the simulation
+processor 4:3:4 used 0.0 Joules by being active during the execution of the simulation
+processor 4:3:5 used 0.0 Joules by being active during the execution of the simulation
+processor 4:3:6 used 0.0 Joules by being active during the execution of the simulation
+processor 4:3:7 used 0.0 Joules by being active during the execution of the simulation
+processor 4:3:8 used 0.0 Joules by being active during the execution of the simulation
+processor 4:3:9 used 0.0 Joules by being active during the execution of the simulation
+processor 4:3:10 used 0.0012359111111110836 Joules by being active during the execution of the simulation
+processor 4:3:11 used 0.0 Joules by being active during the execution of the simulation
+processor 4:3:12 used 0.0 Joules by being active during the execution of the simulation
+processor 4:3:13 used 0.0 Joules by being active during the execution of the simulation
+processor 4:3:14 used 0.0 Joules by being active during the execution of the simulation
+processor 4:3:15 used 0.0 Joules by being active during the execution of the simulation
+processor 4:3:16 used 0.0 Joules by being active during the execution of the simulation
+processor 4:3:17 used 0.0 Joules by being active during the execution of the simulation
+The chip at 4,3 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 4:4:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 4:4:1 (running ChipPowerMonitor on 4, 4) used 3.5555555555555553e-07 Joules by being active during the execution of the simulation
+processor 4:4:2 used 0.0 Joules by being active during the execution of the simulation
+processor 4:4:3 used 0.0 Joules by being active during the execution of the simulation
+processor 4:4:4 used 0.0 Joules by being active during the execution of the simulation
+processor 4:4:5 used 0.0 Joules by being active during the execution of the simulation
+processor 4:4:6 used 0.0 Joules by being active during the execution of the simulation
+processor 4:4:7 used 0.0 Joules by being active during the execution of the simulation
+processor 4:4:8 used 0.0 Joules by being active during the execution of the simulation
+processor 4:4:9 used 0.0 Joules by being active during the execution of the simulation
+processor 4:4:10 used 0.0012202666666666405 Joules by being active during the execution of the simulation
+processor 4:4:11 used 0.0 Joules by being active during the execution of the simulation
+processor 4:4:12 used 0.0 Joules by being active during the execution of the simulation
+processor 4:4:13 used 0.0 Joules by being active during the execution of the simulation
+processor 4:4:14 used 0.0 Joules by being active during the execution of the simulation
+processor 4:4:15 used 0.0 Joules by being active during the execution of the simulation
+processor 4:4:16 used 0.0 Joules by being active during the execution of the simulation
+processor 4:4:17 used 0.0 Joules by being active during the execution of the simulation
+The chip at 4,4 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 4:5:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 4:5:1 (running ChipPowerMonitor on 4, 5) used 0.0 Joules by being active during the execution of the simulation
+processor 4:5:2 used 0.0 Joules by being active during the execution of the simulation
+processor 4:5:3 used 0.0 Joules by being active during the execution of the simulation
+processor 4:5:4 used 0.0 Joules by being active during the execution of the simulation
+processor 4:5:5 used 0.0 Joules by being active during the execution of the simulation
+processor 4:5:6 used 0.0 Joules by being active during the execution of the simulation
+processor 4:5:7 used 0.0 Joules by being active during the execution of the simulation
+processor 4:5:8 used 0.0 Joules by being active during the execution of the simulation
+processor 4:5:9 used 0.0 Joules by being active during the execution of the simulation
+processor 4:5:10 used 0.001234844444444419 Joules by being active during the execution of the simulation
+processor 4:5:11 used 0.0 Joules by being active during the execution of the simulation
+processor 4:5:12 used 0.0 Joules by being active during the execution of the simulation
+processor 4:5:13 used 0.0 Joules by being active during the execution of the simulation
+processor 4:5:14 used 0.0 Joules by being active during the execution of the simulation
+processor 4:5:15 used 0.0 Joules by being active during the execution of the simulation
+processor 4:5:16 used 0.0 Joules by being active during the execution of the simulation
+processor 4:5:17 used 0.0 Joules by being active during the execution of the simulation
+The chip at 4,5 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 4:6:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 4:6:1 (running ChipPowerMonitor on 4, 6) used 0.0 Joules by being active during the execution of the simulation
+processor 4:6:2 used 0.0 Joules by being active during the execution of the simulation
+processor 4:6:3 used 0.0 Joules by being active during the execution of the simulation
+processor 4:6:4 used 0.0 Joules by being active during the execution of the simulation
+processor 4:6:5 used 0.0 Joules by being active during the execution of the simulation
+processor 4:6:6 used 0.0 Joules by being active during the execution of the simulation
+processor 4:6:7 used 0.0 Joules by being active during the execution of the simulation
+processor 4:6:8 used 0.0 Joules by being active during the execution of the simulation
+processor 4:6:9 used 0.0 Joules by being active during the execution of the simulation
+processor 4:6:10 used 0.0012263111111110844 Joules by being active during the execution of the simulation
+processor 4:6:11 used 0.0 Joules by being active during the execution of the simulation
+processor 4:6:12 used 0.0 Joules by being active during the execution of the simulation
+processor 4:6:13 used 0.0 Joules by being active during the execution of the simulation
+processor 4:6:14 used 0.0 Joules by being active during the execution of the simulation
+processor 4:6:15 used 0.0 Joules by being active during the execution of the simulation
+processor 4:6:16 used 0.0 Joules by being active during the execution of the simulation
+processor 4:6:17 used 0.0 Joules by being active during the execution of the simulation
+The chip at 4,6 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 4:7:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 4:7:1 (running ChipPowerMonitor on 4, 7) used 0.0 Joules by being active during the execution of the simulation
+processor 4:7:2 used 0.0 Joules by being active during the execution of the simulation
+processor 4:7:3 used 0.0 Joules by being active during the execution of the simulation
+processor 4:7:4 used 0.0 Joules by being active during the execution of the simulation
+processor 4:7:5 used 0.0 Joules by being active during the execution of the simulation
+processor 4:7:6 used 0.0 Joules by being active during the execution of the simulation
+processor 4:7:7 used 0.0 Joules by being active during the execution of the simulation
+processor 4:7:8 used 0.0 Joules by being active during the execution of the simulation
+processor 4:7:9 used 0.0 Joules by being active during the execution of the simulation
+processor 4:7:10 used 0.0012227555555555268 Joules by being active during the execution of the simulation
+processor 4:7:11 used 0.0 Joules by being active during the execution of the simulation
+processor 4:7:12 used 0.0 Joules by being active during the execution of the simulation
+processor 4:7:13 used 0.0 Joules by being active during the execution of the simulation
+processor 4:7:14 used 0.0 Joules by being active during the execution of the simulation
+processor 4:7:15 used 0.0 Joules by being active during the execution of the simulation
+processor 4:7:16 used 0.0 Joules by being active during the execution of the simulation
+processor 4:7:17 used 0.0 Joules by being active during the execution of the simulation
+The chip at 4,7 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 5:1:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 5:1:1 (running ChipPowerMonitor on 5, 1) used 0.0 Joules by being active during the execution of the simulation
+processor 5:1:2 used 0.007164088888888806 Joules by being active during the execution of the simulation
+processor 5:1:3 used 0.007148799999999925 Joules by being active during the execution of the simulation
+processor 5:1:4 used 0.007150577777777705 Joules by being active during the execution of the simulation
+processor 5:1:5 used 0.007061333333333259 Joules by being active during the execution of the simulation
+processor 5:1:6 used 0.007147022222222154 Joules by being active during the execution of the simulation
+processor 5:1:7 used 0.007115377777777705 Joules by being active during the execution of the simulation
+processor 5:1:8 used 0.007212799999999933 Joules by being active during the execution of the simulation
+processor 5:1:9 used 0.007168355555555492 Joules by being active during the execution of the simulation
+processor 5:1:10 used 0.0012824888888888649 Joules by being active during the execution of the simulation
+processor 5:1:11 used 0.007207822222222154 Joules by being active during the execution of the simulation
+processor 5:1:12 used 0.007196799999999928 Joules by being active during the execution of the simulation
+processor 5:1:13 used 0.007124266666666592 Joules by being active during the execution of the simulation
+processor 5:1:14 used 0.0071178666666666 Joules by being active during the execution of the simulation
+processor 5:1:15 used 0.007117511111111045 Joules by being active during the execution of the simulation
+processor 5:1:16 used 0.007168711111111048 Joules by being active during the execution of the simulation
+processor 5:1:17 used 0.007088711111111044 Joules by being active during the execution of the simulation
+The chip at 5,1 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 5:2:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 5:2:1 (running ChipPowerMonitor on 5, 2) used 0.03555484444444436 Joules by being active during the execution of the simulation
+processor 5:2:2 used 0.007183999999999929 Joules by being active during the execution of the simulation
+processor 5:2:3 used 0.0072874666666666015 Joules by being active during the execution of the simulation
+processor 5:2:4 used 0.007199644444444358 Joules by being active during the execution of the simulation
+processor 5:2:5 used 0.007273599999999914 Joules by being active during the execution of the simulation
+processor 5:2:6 used 0.007200711111111035 Joules by being active during the execution of the simulation
+processor 5:2:7 used 0.007149155555555475 Joules by being active during the execution of the simulation
+processor 5:2:8 used 0.0 Joules by being active during the execution of the simulation
+processor 5:2:9 used 0.0 Joules by being active during the execution of the simulation
+processor 5:2:10 used 0.0 Joules by being active during the execution of the simulation
+processor 5:2:11 used 0.0012373333333333058 Joules by being active during the execution of the simulation
+processor 5:2:12 used 0.0 Joules by being active during the execution of the simulation
+processor 5:2:13 used 0.0 Joules by being active during the execution of the simulation
+processor 5:2:14 used 0.0 Joules by being active during the execution of the simulation
+processor 5:2:15 used 0.0 Joules by being active during the execution of the simulation
+processor 5:2:16 used 0.0 Joules by being active during the execution of the simulation
+processor 5:2:17 used 0.0 Joules by being active during the execution of the simulation
+The chip at 5,2 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 5:3:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 5:3:1 (running ChipPowerMonitor on 5, 3) used 0.0 Joules by being active during the execution of the simulation
+processor 5:3:2 used 0.0 Joules by being active during the execution of the simulation
+processor 5:3:3 used 0.0 Joules by being active during the execution of the simulation
+processor 5:3:4 used 0.0 Joules by being active during the execution of the simulation
+processor 5:3:5 used 0.0 Joules by being active during the execution of the simulation
+processor 5:3:6 used 0.0 Joules by being active during the execution of the simulation
+processor 5:3:7 used 0.0 Joules by being active during the execution of the simulation
+processor 5:3:8 used 0.0 Joules by being active during the execution of the simulation
+processor 5:3:9 used 0.0 Joules by being active during the execution of the simulation
+processor 5:3:10 used 0.0012295111111110812 Joules by being active during the execution of the simulation
+processor 5:3:11 used 0.0 Joules by being active during the execution of the simulation
+processor 5:3:12 used 0.0 Joules by being active during the execution of the simulation
+processor 5:3:13 used 0.0 Joules by being active during the execution of the simulation
+processor 5:3:14 used 0.0 Joules by being active during the execution of the simulation
+processor 5:3:15 used 0.0 Joules by being active during the execution of the simulation
+processor 5:3:16 used 0.0 Joules by being active during the execution of the simulation
+processor 5:3:17 used 0.0 Joules by being active during the execution of the simulation
+The chip at 5,3 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 5:4:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 5:4:1 (running ChipPowerMonitor on 5, 4) used 0.0 Joules by being active during the execution of the simulation
+processor 5:4:2 used 0.0 Joules by being active during the execution of the simulation
+processor 5:4:3 used 0.0 Joules by being active during the execution of the simulation
+processor 5:4:4 used 0.0 Joules by being active during the execution of the simulation
+processor 5:4:5 used 0.0 Joules by being active during the execution of the simulation
+processor 5:4:6 used 0.0 Joules by being active during the execution of the simulation
+processor 5:4:7 used 0.0 Joules by being active during the execution of the simulation
+processor 5:4:8 used 0.0 Joules by being active during the execution of the simulation
+processor 5:4:9 used 0.0 Joules by being active during the execution of the simulation
+processor 5:4:10 used 0.0 Joules by being active during the execution of the simulation
+processor 5:4:11 used 0.0012273777777777517 Joules by being active during the execution of the simulation
+processor 5:4:12 used 0.0 Joules by being active during the execution of the simulation
+processor 5:4:13 used 0.0 Joules by being active during the execution of the simulation
+processor 5:4:14 used 0.0 Joules by being active during the execution of the simulation
+processor 5:4:15 used 0.0 Joules by being active during the execution of the simulation
+processor 5:4:16 used 0.0 Joules by being active during the execution of the simulation
+processor 5:4:17 used 0.0 Joules by being active during the execution of the simulation
+The chip at 5,4 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 5:5:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 5:5:1 (running ChipPowerMonitor on 5, 5) used 0.0 Joules by being active during the execution of the simulation
+processor 5:5:2 used 0.0 Joules by being active during the execution of the simulation
+processor 5:5:3 used 0.0 Joules by being active during the execution of the simulation
+processor 5:5:4 used 0.0 Joules by being active during the execution of the simulation
+processor 5:5:5 used 0.0 Joules by being active during the execution of the simulation
+processor 5:5:6 used 0.0 Joules by being active during the execution of the simulation
+processor 5:5:7 used 0.0 Joules by being active during the execution of the simulation
+processor 5:5:8 used 0.0 Joules by being active during the execution of the simulation
+processor 5:5:9 used 0.0 Joules by being active during the execution of the simulation
+processor 5:5:10 used 0.0 Joules by being active during the execution of the simulation
+processor 5:5:11 used 0.0012401777777777505 Joules by being active during the execution of the simulation
+processor 5:5:12 used 0.0 Joules by being active during the execution of the simulation
+processor 5:5:13 used 0.0 Joules by being active during the execution of the simulation
+processor 5:5:14 used 0.0 Joules by being active during the execution of the simulation
+processor 5:5:15 used 0.0 Joules by being active during the execution of the simulation
+processor 5:5:16 used 0.0 Joules by being active during the execution of the simulation
+processor 5:5:17 used 0.0 Joules by being active during the execution of the simulation
+The chip at 5,5 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 5:6:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 5:6:1 (running ChipPowerMonitor on 5, 6) used 0.0 Joules by being active during the execution of the simulation
+processor 5:6:2 used 0.0 Joules by being active during the execution of the simulation
+processor 5:6:3 used 0.0 Joules by being active during the execution of the simulation
+processor 5:6:4 used 0.0 Joules by being active during the execution of the simulation
+processor 5:6:5 used 0.0 Joules by being active during the execution of the simulation
+processor 5:6:6 used 0.0 Joules by being active during the execution of the simulation
+processor 5:6:7 used 0.0 Joules by being active during the execution of the simulation
+processor 5:6:8 used 0.0 Joules by being active during the execution of the simulation
+processor 5:6:9 used 0.0 Joules by being active during the execution of the simulation
+processor 5:6:10 used 0.0 Joules by being active during the execution of the simulation
+processor 5:6:11 used 0.0012255999999999712 Joules by being active during the execution of the simulation
+processor 5:6:12 used 0.0 Joules by being active during the execution of the simulation
+processor 5:6:13 used 0.0 Joules by being active during the execution of the simulation
+processor 5:6:14 used 0.0 Joules by being active during the execution of the simulation
+processor 5:6:15 used 0.0 Joules by being active during the execution of the simulation
+processor 5:6:16 used 0.0 Joules by being active during the execution of the simulation
+processor 5:6:17 used 0.0 Joules by being active during the execution of the simulation
+The chip at 5,6 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 5:7:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 5:7:1 (running ChipPowerMonitor on 5, 7) used 0.0 Joules by being active during the execution of the simulation
+processor 5:7:2 used 0.0 Joules by being active during the execution of the simulation
+processor 5:7:3 used 0.0 Joules by being active during the execution of the simulation
+processor 5:7:4 used 0.0 Joules by being active during the execution of the simulation
+processor 5:7:5 used 0.0 Joules by being active during the execution of the simulation
+processor 5:7:6 used 0.0 Joules by being active during the execution of the simulation
+processor 5:7:7 used 0.0 Joules by being active during the execution of the simulation
+processor 5:7:8 used 0.0 Joules by being active during the execution of the simulation
+processor 5:7:9 used 0.0 Joules by being active during the execution of the simulation
+processor 5:7:10 used 0.0012277333333333047 Joules by being active during the execution of the simulation
+processor 5:7:11 used 0.0 Joules by being active during the execution of the simulation
+processor 5:7:12 used 0.0 Joules by being active during the execution of the simulation
+processor 5:7:13 used 0.0 Joules by being active during the execution of the simulation
+processor 5:7:14 used 0.0 Joules by being active during the execution of the simulation
+processor 5:7:15 used 0.0 Joules by being active during the execution of the simulation
+processor 5:7:16 used 0.0 Joules by being active during the execution of the simulation
+processor 5:7:17 used 0.0 Joules by being active during the execution of the simulation
+The chip at 5,7 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 6:2:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 6:2:1 (running ChipPowerMonitor on 6, 2) used 0.0 Joules by being active during the execution of the simulation
+processor 6:2:2 used 0.007146666666666586 Joules by being active during the execution of the simulation
+processor 6:2:3 used 0.007126755555555484 Joules by being active during the execution of the simulation
+processor 6:2:4 used 0.00714631111111104 Joules by being active during the execution of the simulation
+processor 6:2:5 used 0.007096533333333259 Joules by being active during the execution of the simulation
+processor 6:2:6 used 0.007153777777777715 Joules by being active during the execution of the simulation
+processor 6:2:7 used 0.0072209777777777215 Joules by being active during the execution of the simulation
+processor 6:2:8 used 0.007168711111111038 Joules by being active during the execution of the simulation
+processor 6:2:9 used 0.00714631111111102 Joules by being active during the execution of the simulation
+processor 6:2:10 used 0.0012647111111110882 Joules by being active during the execution of the simulation
+processor 6:2:11 used 0.007071644444444366 Joules by being active during the execution of the simulation
+processor 6:2:12 used 0.007093333333333245 Joules by being active during the execution of the simulation
+processor 6:2:13 used 0.007151999999999929 Joules by being active during the execution of the simulation
+processor 6:2:14 used 0.007123555555555491 Joules by being active during the execution of the simulation
+processor 6:2:15 used 0.007153777777777703 Joules by being active during the execution of the simulation
+processor 6:2:16 used 0.007117866666666592 Joules by being active during the execution of the simulation
+processor 6:2:17 used 0.007208533333333265 Joules by being active during the execution of the simulation
+The chip at 6,2 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 6:3:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 6:3:1 (running ChipPowerMonitor on 6, 3) used 0.0 Joules by being active during the execution of the simulation
+processor 6:3:2 used 0.0 Joules by being active during the execution of the simulation
+processor 6:3:3 used 0.0 Joules by being active during the execution of the simulation
+processor 6:3:4 used 0.0 Joules by being active during the execution of the simulation
+processor 6:3:5 used 0.0 Joules by being active during the execution of the simulation
+processor 6:3:6 used 0.0 Joules by being active during the execution of the simulation
+processor 6:3:7 used 0.0 Joules by being active during the execution of the simulation
+processor 6:3:8 used 0.0 Joules by being active during the execution of the simulation
+processor 6:3:9 used 0.0 Joules by being active during the execution of the simulation
+processor 6:3:10 used 0.001217422222222194 Joules by being active during the execution of the simulation
+processor 6:3:11 used 0.0 Joules by being active during the execution of the simulation
+processor 6:3:12 used 0.0 Joules by being active during the execution of the simulation
+processor 6:3:13 used 0.0 Joules by being active during the execution of the simulation
+processor 6:3:14 used 0.0 Joules by being active during the execution of the simulation
+processor 6:3:15 used 0.0 Joules by being active during the execution of the simulation
+processor 6:3:16 used 0.0 Joules by being active during the execution of the simulation
+processor 6:3:17 used 0.0 Joules by being active during the execution of the simulation
+The chip at 6,3 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 6:4:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 6:4:1 (running ChipPowerMonitor on 6, 4) used 0.035555555555555465 Joules by being active during the execution of the simulation
+processor 6:4:2 used 0.0 Joules by being active during the execution of the simulation
+processor 6:4:3 used 0.0 Joules by being active during the execution of the simulation
+processor 6:4:4 used 0.0 Joules by being active during the execution of the simulation
+processor 6:4:5 used 0.0 Joules by being active during the execution of the simulation
+processor 6:4:6 used 0.0 Joules by being active during the execution of the simulation
+processor 6:4:7 used 0.0 Joules by being active during the execution of the simulation
+processor 6:4:8 used 0.0 Joules by being active during the execution of the simulation
+processor 6:4:9 used 0.0 Joules by being active during the execution of the simulation
+processor 6:4:10 used 0.0012391111111110865 Joules by being active during the execution of the simulation
+processor 6:4:11 used 0.0 Joules by being active during the execution of the simulation
+processor 6:4:12 used 0.0 Joules by being active during the execution of the simulation
+processor 6:4:13 used 0.0 Joules by being active during the execution of the simulation
+processor 6:4:14 used 0.0 Joules by being active during the execution of the simulation
+processor 6:4:15 used 0.0 Joules by being active during the execution of the simulation
+processor 6:4:16 used 0.0 Joules by being active during the execution of the simulation
+processor 6:4:17 used 0.0 Joules by being active during the execution of the simulation
+The chip at 6,4 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 6:5:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 6:5:1 (running ChipPowerMonitor on 6, 5) used 0.0 Joules by being active during the execution of the simulation
+processor 6:5:2 used 0.0 Joules by being active during the execution of the simulation
+processor 6:5:3 used 0.0 Joules by being active during the execution of the simulation
+processor 6:5:4 used 0.0 Joules by being active during the execution of the simulation
+processor 6:5:5 used 0.0 Joules by being active during the execution of the simulation
+processor 6:5:6 used 0.0 Joules by being active during the execution of the simulation
+processor 6:5:7 used 0.0 Joules by being active during the execution of the simulation
+processor 6:5:8 used 0.0 Joules by being active during the execution of the simulation
+processor 6:5:9 used 0.0 Joules by being active during the execution of the simulation
+processor 6:5:10 used 0.0012319999999999755 Joules by being active during the execution of the simulation
+processor 6:5:11 used 0.0 Joules by being active during the execution of the simulation
+processor 6:5:12 used 0.0 Joules by being active during the execution of the simulation
+processor 6:5:13 used 0.0 Joules by being active during the execution of the simulation
+processor 6:5:14 used 0.0 Joules by being active during the execution of the simulation
+processor 6:5:15 used 0.0 Joules by being active during the execution of the simulation
+processor 6:5:16 used 0.0 Joules by being active during the execution of the simulation
+processor 6:5:17 used 0.0 Joules by being active during the execution of the simulation
+The chip at 6,5 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 6:6:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 6:6:1 (running ChipPowerMonitor on 6, 6) used 0.03555235555555547 Joules by being active during the execution of the simulation
+processor 6:6:2 used 0.0 Joules by being active during the execution of the simulation
+processor 6:6:3 used 0.0 Joules by being active during the execution of the simulation
+processor 6:6:4 used 0.0 Joules by being active during the execution of the simulation
+processor 6:6:5 used 0.0 Joules by being active during the execution of the simulation
+processor 6:6:6 used 0.0 Joules by being active during the execution of the simulation
+processor 6:6:7 used 0.0 Joules by being active during the execution of the simulation
+processor 6:6:8 used 0.0 Joules by being active during the execution of the simulation
+processor 6:6:9 used 0.0 Joules by being active during the execution of the simulation
+processor 6:6:10 used 0.0012334222222221934 Joules by being active during the execution of the simulation
+processor 6:6:11 used 0.0 Joules by being active during the execution of the simulation
+processor 6:6:12 used 0.0 Joules by being active during the execution of the simulation
+processor 6:6:13 used 0.0 Joules by being active during the execution of the simulation
+processor 6:6:14 used 0.0 Joules by being active during the execution of the simulation
+processor 6:6:15 used 0.0 Joules by being active during the execution of the simulation
+processor 6:6:16 used 0.0 Joules by being active during the execution of the simulation
+processor 6:6:17 used 0.0 Joules by being active during the execution of the simulation
+The chip at 6,6 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 6:7:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 6:7:1 (running ChipPowerMonitor on 6, 7) used 0.0 Joules by being active during the execution of the simulation
+processor 6:7:2 used 0.0 Joules by being active during the execution of the simulation
+processor 6:7:3 used 0.0 Joules by being active during the execution of the simulation
+processor 6:7:4 used 0.0 Joules by being active during the execution of the simulation
+processor 6:7:5 used 0.0 Joules by being active during the execution of the simulation
+processor 6:7:6 used 0.0 Joules by being active during the execution of the simulation
+processor 6:7:7 used 0.0 Joules by being active during the execution of the simulation
+processor 6:7:8 used 0.0 Joules by being active during the execution of the simulation
+processor 6:7:9 used 0.0 Joules by being active during the execution of the simulation
+processor 6:7:10 used 0.0012206222222221927 Joules by being active during the execution of the simulation
+processor 6:7:11 used 0.0 Joules by being active during the execution of the simulation
+processor 6:7:12 used 0.0 Joules by being active during the execution of the simulation
+processor 6:7:13 used 0.0 Joules by being active during the execution of the simulation
+processor 6:7:14 used 0.0 Joules by being active during the execution of the simulation
+processor 6:7:15 used 0.0 Joules by being active during the execution of the simulation
+processor 6:7:16 used 0.0 Joules by being active during the execution of the simulation
+processor 6:7:17 used 0.0 Joules by being active during the execution of the simulation
+The chip at 6,7 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 7:3:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 7:3:1 (running ChipPowerMonitor on 7, 3) used 0.0 Joules by being active during the execution of the simulation
+processor 7:3:2 used 0.0 Joules by being active during the execution of the simulation
+processor 7:3:3 used 0.0 Joules by being active during the execution of the simulation
+processor 7:3:4 used 0.0 Joules by being active during the execution of the simulation
+processor 7:3:5 used 0.0 Joules by being active during the execution of the simulation
+processor 7:3:6 used 0.0 Joules by being active during the execution of the simulation
+processor 7:3:7 used 0.0 Joules by being active during the execution of the simulation
+processor 7:3:8 used 0.0 Joules by being active during the execution of the simulation
+processor 7:3:9 used 0.0 Joules by being active during the execution of the simulation
+processor 7:3:10 used 0.0012337777777777525 Joules by being active during the execution of the simulation
+processor 7:3:11 used 0.0 Joules by being active during the execution of the simulation
+processor 7:3:12 used 0.0 Joules by being active during the execution of the simulation
+processor 7:3:13 used 0.0 Joules by being active during the execution of the simulation
+processor 7:3:14 used 0.0 Joules by being active during the execution of the simulation
+processor 7:3:15 used 0.0 Joules by being active during the execution of the simulation
+processor 7:3:16 used 0.0 Joules by being active during the execution of the simulation
+processor 7:3:17 used 0.0 Joules by being active during the execution of the simulation
+The chip at 7,3 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 7:4:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 7:4:1 (running ChipPowerMonitor on 7, 4) used 0.0 Joules by being active during the execution of the simulation
+processor 7:4:2 used 0.0 Joules by being active during the execution of the simulation
+processor 7:4:3 used 0.0 Joules by being active during the execution of the simulation
+processor 7:4:4 used 0.0 Joules by being active during the execution of the simulation
+processor 7:4:5 used 0.0 Joules by being active during the execution of the simulation
+processor 7:4:6 used 0.0 Joules by being active during the execution of the simulation
+processor 7:4:7 used 0.0 Joules by being active during the execution of the simulation
+processor 7:4:8 used 0.0 Joules by being active during the execution of the simulation
+processor 7:4:9 used 0.0 Joules by being active during the execution of the simulation
+processor 7:4:10 used 0.001231999999999972 Joules by being active during the execution of the simulation
+processor 7:4:11 used 0.0 Joules by being active during the execution of the simulation
+processor 7:4:12 used 0.0 Joules by being active during the execution of the simulation
+processor 7:4:13 used 0.0 Joules by being active during the execution of the simulation
+processor 7:4:14 used 0.0 Joules by being active during the execution of the simulation
+processor 7:4:15 used 0.0 Joules by being active during the execution of the simulation
+processor 7:4:16 used 0.0 Joules by being active during the execution of the simulation
+processor 7:4:17 used 0.0 Joules by being active during the execution of the simulation
+The chip at 7,4 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 7:5:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 7:5:1 (running ChipPowerMonitor on 7, 5) used 0.035555555555555465 Joules by being active during the execution of the simulation
+processor 7:5:2 used 0.0 Joules by being active during the execution of the simulation
+processor 7:5:3 used 0.0 Joules by being active during the execution of the simulation
+processor 7:5:4 used 0.0 Joules by being active during the execution of the simulation
+processor 7:5:5 used 0.0 Joules by being active during the execution of the simulation
+processor 7:5:6 used 0.0 Joules by being active during the execution of the simulation
+processor 7:5:7 used 0.0 Joules by being active during the execution of the simulation
+processor 7:5:8 used 0.0 Joules by being active during the execution of the simulation
+processor 7:5:9 used 0.0 Joules by being active during the execution of the simulation
+processor 7:5:10 used 0.0012369777777777506 Joules by being active during the execution of the simulation
+processor 7:5:11 used 0.0 Joules by being active during the execution of the simulation
+processor 7:5:12 used 0.0 Joules by being active during the execution of the simulation
+processor 7:5:13 used 0.0 Joules by being active during the execution of the simulation
+processor 7:5:14 used 0.0 Joules by being active during the execution of the simulation
+processor 7:5:15 used 0.0 Joules by being active during the execution of the simulation
+processor 7:5:16 used 0.0 Joules by being active during the execution of the simulation
+processor 7:5:17 used 0.0 Joules by being active during the execution of the simulation
+The chip at 7,5 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 7:6:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 7:6:1 (running ChipPowerMonitor on 7, 6) used 0.0 Joules by being active during the execution of the simulation
+processor 7:6:2 used 0.0 Joules by being active during the execution of the simulation
+processor 7:6:3 used 0.0 Joules by being active during the execution of the simulation
+processor 7:6:4 used 0.0 Joules by being active during the execution of the simulation
+processor 7:6:5 used 0.0 Joules by being active during the execution of the simulation
+processor 7:6:6 used 0.0 Joules by being active during the execution of the simulation
+processor 7:6:7 used 0.0 Joules by being active during the execution of the simulation
+processor 7:6:8 used 0.0 Joules by being active during the execution of the simulation
+processor 7:6:9 used 0.0 Joules by being active during the execution of the simulation
+processor 7:6:10 used 0.0012334222222221954 Joules by being active during the execution of the simulation
+processor 7:6:11 used 0.0 Joules by being active during the execution of the simulation
+processor 7:6:12 used 0.0 Joules by being active during the execution of the simulation
+processor 7:6:13 used 0.0 Joules by being active during the execution of the simulation
+processor 7:6:14 used 0.0 Joules by being active during the execution of the simulation
+processor 7:6:15 used 0.0 Joules by being active during the execution of the simulation
+processor 7:6:16 used 0.0 Joules by being active during the execution of the simulation
+processor 7:6:17 used 0.0 Joules by being active during the execution of the simulation
+The chip at 7,6 used 1.8 Joules by being idle during the execution of the simulation
+
+processor 7:7:0 used 0.17777777777778633 Joules by being active during the execution of the simulation
+processor 7:7:1 (running ChipPowerMonitor on 7, 7) used 3.5555555555555553e-07 Joules by being active during the execution of the simulation
+processor 7:7:2 used 0.0 Joules by being active during the execution of the simulation
+processor 7:7:3 used 0.0 Joules by being active during the execution of the simulation
+processor 7:7:4 used 0.0 Joules by being active during the execution of the simulation
+processor 7:7:5 used 0.0 Joules by being active during the execution of the simulation
+processor 7:7:6 used 0.0 Joules by being active during the execution of the simulation
+processor 7:7:7 used 0.0 Joules by being active during the execution of the simulation
+processor 7:7:8 used 0.0 Joules by being active during the execution of the simulation
+processor 7:7:9 used 0.0 Joules by being active during the execution of the simulation
+processor 7:7:10 used 0.0012266666666666387 Joules by being active during the execution of the simulation
+processor 7:7:11 used 0.0 Joules by being active during the execution of the simulation
+processor 7:7:12 used 0.0 Joules by being active during the execution of the simulation
+processor 7:7:13 used 0.0 Joules by being active during the execution of the simulation
+processor 7:7:14 used 0.0 Joules by being active during the execution of the simulation
+processor 7:7:15 used 0.0 Joules by being active during the execution of the simulation
+processor 7:7:16 used 0.0 Joules by being active during the execution of the simulation
+processor 7:7:17 used 0.0 Joules by being active during the execution of the simulation
+The chip at 7,7 used 1.8 Joules by being idle during the execution of the simulation

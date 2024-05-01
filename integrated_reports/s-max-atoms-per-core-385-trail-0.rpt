@@ -1,0 +1,16 @@
+Summary energy file
+-------------------
+
+Energy used by chips during runtime is 19.20748408888889 Joules (over 1.0 seconds)
+Energy used by FPGAs is 0.0 Joules over the entire time the machine was booted (over 19.054292 seconds)
+Energy used by FPGAs is 0.0 Joules over the runtime period (over 1.0 seconds)
+Energy used by outside router / cooling during the runtime period is 117.0 Joules
+Energy used by packet transmissions is 0.007663672 Joules (over 42.420889 seconds)
+Energy used during the mapping process is 2733.8918490000005 Joules (over 23.366597000000002 seconds)
+Energy used by the data generation process is 0.0 Joules (over 0.0 milliseconds)
+Energy used during the loading process is 2153.350978305293 Joules (over 12.651438 seconds)
+Energy used during the data extraction process is 1090.8841316167543 Joules (over 6.4028540000000005 seconds)
+Total energy used by the simulation over 42420.889 milliseconds is:
+     6114.342106682937 Joules, or
+     144.13517139357774 estimated average Watts, or
+     0.0016984283629674825 kWh
